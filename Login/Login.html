@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cuidar+ Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00B4A6",
+            "secondary": "#FF6B35",
+            "accent": "#6366F1",
+            "background-light": "#FFFFFF",
+            "background-dark": "#0f2322",
+            "text-light-headings": "#1E293B",
+            "text-light-body": "#64748B",
+            "input-bg-light": "#F1F5F9",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "12px",
+            "lg": "16px",
+            "xl": "20px",
+            "full": "9999px",
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center p-6 lg:px-12 lg:py-8">
+<h2 class="text-2xl font-bold text-primary">Cuidar+</h2>
+</header>
+<main class="flex-grow">
+<div class="flex h-full flex-col lg:flex-row">
+<div class="relative hidden w-full flex-1 items-center justify-center lg:flex">
+<div class="p-12 w-full max-w-3xl">
+<div class="w-full gap-1 overflow-hidden bg-background-light dark:bg-background-dark aspect-square rounded-xl flex">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1" data-alt="Soft-toned illustration depicting a caregiver using a tablet to assist an elderly person in a modern, comfortable home setting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVBzuvecmO_SLUEnSFpA4KQnrpAGl7_zzGnpI4XseAXVV8jDcbAkImlRgHqR5FriKnZ4PIDm1G9E-G93kNs7GYAQZ1LGtfrdr2_o1c_RwCtz6IlqXnabDiy8pQBj_Rsy6BU9GESYx0jUmgriKkx9Qqc_OzzJQG5kpx61HIuFpR0XEwM9dkUy3hQ6ArSxKQNFnLGwM3RebVjviii_wjSY9Ty7VnEqxAXTKOMKxcpuD95TiiPKrTFGbEB43B2hQJoRHX-IVVCOK2Jymn");'></div>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-1 items-center justify-center p-4 py-12 lg:p-12">
+<div class="flex w-full max-w-md flex-col items-stretch space-y-8 rounded-lg">
+<div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+<h1 class="text-text-light-headings tracking-light text-[32px] font-bold leading-tight">Bem-vindo(a) de volta!</h1>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full flex-1">
+<p class="text-text-light-body text-base font-medium leading-normal pb-2">E-mail</p>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-text-light-body">mail</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light-headings focus:outline-0 focus:ring-2 focus:ring-accent/50 border-0 bg-input-bg-light h-14 placeholder:text-text-light-body pl-12 pr-4 py-3.5 text-base font-normal leading-normal" placeholder="Digite seu e-mail" type="email" value=""/>
+</div>
+</label>
+<label class="flex flex-col w-full flex-1">
+<p class="text-text-light-body text-base font-medium leading-normal pb-2">Senha</p>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-text-light-body">lock</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light-headings focus:outline-0 focus:ring-2 focus:ring-accent/50 border-0 bg-input-bg-light h-14 placeholder:text-text-light-body pl-12 pr-12 py-3.5 text-base font-normal leading-normal" placeholder="Digite sua senha" type="password" value=""/>
+<button aria-label="Toggle password visibility" class="absolute right-4 text-text-light-body">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</label>
+</div>
+<div class="flex w-full flex-col items-stretch gap-4">
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Entrar</span>
+</button>
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-5 flex-1 bg-white text-text-light-body text-base font-bold leading-normal tracking-[0.015em] border border-slate-200 hover:bg-slate-50 transition-colors shadow-sm">
+<img alt="Google logo" class="w-6 h-6 mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxzZBdoH072gUdLpUxM9m5bgdfvo7oF7XoU0lMs3fje_kAmhsXgL2jKPFaJ4ZSUaSiXmDRP-RQ0orXEEm9YroYDVBWqZExBe2Mz-wJanm83F4XSHOFlBvGFafJWtxrdXznE8MqqLIglQHw6ykJ9uTI075yHYOyf5h2LsVk8O4S9J2Ry7-RlQ31NH5q5Pq2Hac_MzRw25VXR_E_qsdnM8GQP_HG2F8373g2wOONdcgHTNTw7p2SL9UbT6W2Ga5YzJ1cbpbR-Nl2Jbcn"/>
+<span class="truncate">Entrar com Google</span>
+</button>
+</div>
+<p class="text-center text-base text-text-light-body">Não tem uma conta? <a class="font-bold text-primary hover:underline" href="#">Criar conta</a></p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
